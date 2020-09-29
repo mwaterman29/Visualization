@@ -1,25 +1,43 @@
 <!DOCTYPE html>
 <html lang="en-us">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Unity WebGL Player | Visualization Project</title>
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL_Build1.json", {onProgress: UnityProgress});
-    </script>
-  </head>
-  <body>
-    <div class="webgl-content">
-      <div id="unityContainer" style="width: 960px; height: 600px"></div>
-      <div class="footer">
-        <div class="webgl-logo"></div>
-        <div class="fullscreen" onclick="unityInstance.SetFullscreen(1)"></div>
-        <div class="title">Visualization Project</div>
-      </div>
-    </div>
-  </body>
+	<style>
+		.box{
+			display:flex
+			flex:1
+			flex-direction: column;
+			align-items:center;
+			justify-content:center;
+		}
+		h1{
+			text-align:center;
+		}
+		p{
+			text-align:center;
+		}
+		h2{
+			text-align:center;
+			font-size:1em;
+			color:gray;
+			font-style:italic;
+		}
+	</style>
+	<div class="box" style = "border: 12px inset #dcfffb; background-color:#ffdcf4">
+		<h1>Visualization Project | Matt Waterman</h1>
+		<p>Thanks for playing! The controls are available <a href="https://github.com/mwaterman29/Visualization">at the github repo</a>, or by hitting tab at any time!</p>
+		<p>Additionally, if you're experiencing lag on Chrome - Try edge. It's a lot friendlier to the Unity WebGL Player.</p>
+		<h2>psst... scroll down to see the whole unity player...</h2>
+	</div>
+	<div class="box" style = "border: 12px inset #dcfffb">
+		<title>Unity WebGL Player | Visualization Project</title>
+		<link rel="shortcut icon" href="TemplateData/favicon.ico">
+		<link rel="stylesheet" href="TemplateData/style.css">
+		<script src="TemplateData/UnityProgress.js"></script>
+		<script src="Build/UnityLoader.js"></script>
+		<script>
+		  var unityInstance = UnityLoader.instantiate("unityContainer", "Build/WebGL_Build1.json", {onProgress: UnityProgress});
+		</script>
+		<div>
+		  <div id="unityContainer"></div>
+		</div>
+	</div>
 </html>

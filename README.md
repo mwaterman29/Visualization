@@ -1,10 +1,10 @@
 # VisualizationProject
 Visualization Project for Data Structures / Algorithms
 
-Check it out on github pages [here.](https://mwaterman29.github.io/Visualization/Public%20Builds/WebGL_Build1/index.html)
+Check it out on github pages [here.](https://mwaterman29.github.io/Visualization/WebGL%20Standalone/index.html)
 (Note that this might be laggy on chrome, but better on edge.)
 
-Download a build for PC/Mac/Linux [Here](https://downgit.github.io/#/home?url=https://github.com/mwaterman29/Visualization/tree/master/Public%20Builds/Windows_Build1)
+Download a build for PC/Mac/Linux [Here](https://github.com/mwaterman29/Visualization/releases)
 
 # CONTROLS 
 The controls are as following:

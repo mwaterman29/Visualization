@@ -131,7 +131,7 @@ public class Structure : MonoBehaviour
         }
 
         //move head to be above void
-        head.transform.parent.position = new Vector3(head.transform.parent.position.x, height * treeHeightBetween + 3, head.transform.parent.position.z);
+        head.transform.parent.position = new Vector3(head.transform.parent.position.x, height * treeHeightBetween + 1, head.transform.parent.position.z);
 
         //position each node
         positionBinaryTree(head, Vector3.zero, treeWidthBetween * width);

@@ -39,6 +39,8 @@ public class Player : MonoBehaviour
 
     private GameObject controlsPanel;
 
+    private bool firstOrganize;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,11 +58,18 @@ public class Player : MonoBehaviour
 
         controlsPanel = transform.GetComponentInChildren<ControlsPanel>().gameObject;
         controlsPanel.SetActive(false);
+
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(!firstOrganize)
+        {
+            organize();
+            firstOrganize = true;
+        }
+
         //print($"fps: {Mathf.Round(1.0f/Time.deltaTime)}");
         movement();
 
